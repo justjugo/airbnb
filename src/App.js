@@ -17,12 +17,42 @@ function App() {
            act=' Katie Zoferes'
            price='50'
          />
+
          <Card
            img= {leeknow}
            rate='5'
            act=' Lee Know'
            price='100'
-
+         />
+          <Card
+           img= {leeknow}
+           rate='5'
+           act=' Lee Know'
+           price='100'
+         />
+          <Card
+           img= {leeknow}
+           rate='5'
+           act=' Lee Know'
+           price='100'
+         />
+          <Card
+           img= {leeknow}
+           rate='5'
+           act=' Lee Know'
+           price='100'
+         />
+          <Card
+           img= {leeknow}
+           rate='5'
+           act=' Lee Know'
+           price='100'
+         />
+          <Card
+           img= {leeknow}
+           rate='5'
+           act=' Lee Know'
+           price='100'
          />
       </div>
       
