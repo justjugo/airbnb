@@ -1,23 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Header from './componantes/Header';
+import Mainsection from './componantes/Mainsection';
+import Card from './componantes/Card';
+import katie from './images/Katie-Zaferes.png'
+import leeknow from './images/leeknow.png'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App">     
+      <Header/>
+      <Mainsection/>
+      <div className='essai'>
+         <Card
+           img= {katie}
+           rate='4'
+           act=' Katie Zoferes'
+           price='50'
+         />
+         <Card
+           img= {leeknow}
+           rate='5'
+           act=' Lee Know'
+           price='100'
+
+         />
+      </div>
+      
     </div>
   );
 }
