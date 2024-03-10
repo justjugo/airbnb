@@ -1,6 +1,6 @@
 import pic from '../images/Katie-Zaferes.png'
 import star from '../images/star.png'
-export default function Card({img,rate,act,price})
+export default function Card({img,rate,act,price,reviewcount,country})
 {
     return(
         <div className="cardcontainer">
@@ -10,7 +10,7 @@ export default function Card({img,rate,act,price})
             </div>
             <div className="infocard">
                 <img src={star}></img>
-                <p>{rate} (6)-USA</p>
+                <p>{rate} ({reviewcount}) - {country}</p>
             </div>
             <div className='cardinfo'>
                 <p>Life lesson with {act}</p>

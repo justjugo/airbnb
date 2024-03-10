@@ -3,57 +3,29 @@ import './App.css';
 import Header from './componantes/Header';
 import Mainsection from './componantes/Mainsection';
 import Card from './componantes/Card';
-import katie from './images/Katie-Zaferes.png'
 import leeknow from './images/leeknow.png'
+import katie from './images/Katie-Zaferes.png'
+import data from './data';
+
 function App() {
+  const element =data.map(card=> {
+    return <Card
+                img={card.img} 
+                rate={card.rate}
+                act={card.card}
+                price={card.price}
+                country={card.country}
+                reviewcount={card.reviewcount}
+    
+           />
+  })
   return (
-    <div className="App">     
+    <div className="App">  
+       
       <Header/>
       <Mainsection/>
       <div className='essai'>
-         <Card
-           img= {katie}
-           rate='4'
-           act=' Katie Zoferes'
-           price='50'
-         />
-
-         <Card
-           img= {leeknow}
-           rate='5'
-           act=' Lee Know'
-           price='100'
-         />
-          <Card
-           img= {leeknow}
-           rate='5'
-           act=' Lee Know'
-           price='100'
-         />
-          <Card
-           img= {leeknow}
-           rate='5'
-           act=' Lee Know'
-           price='100'
-         />
-          <Card
-           img= {leeknow}
-           rate='5'
-           act=' Lee Know'
-           price='100'
-         />
-          <Card
-           img= {leeknow}
-           rate='5'
-           act=' Lee Know'
-           price='100'
-         />
-          <Card
-           img= {leeknow}
-           rate='5'
-           act=' Lee Know'
-           price='100'
-         />
+        {element}  
       </div>
       
     </div>
